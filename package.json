@@ -5,10 +5,10 @@
     "url": "git+https://github.com/WiggidyW/stretchy-data-grid.git"
   },
   "dependencies": {
-    "@mui/x-data-grid": "^6.5.0"
+    "@mui/x-data-grid": "^6.5.0",
+    "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "lodash": "^4.17.21"
+    "react": "^18.2.0"
   }
 }
