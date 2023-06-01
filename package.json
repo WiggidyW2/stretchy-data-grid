@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "MUI DataGrid with columns that automatically inflate or deflate to fit the currently displayed content",
   "main": "index.js",
-  // "scripts": {
-  //   "test": "echo \"Error: no test specified\" && exit 1"
-  // },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WiggidyW/stretchy-data-grid.git"
