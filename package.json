@@ -1,8 +1,9 @@
 {
   "name": "stretchy-data-grid",
   "version": "0.0.1",
-  "description": "MUI DataGrid with columns that automatically inflate or deflate to fit the currently displayed content",
-  "main": "index.js",
+  "description": "MUI DataGrid with columns that automatically resize",
+  "main": "./index.js",
+  "module": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +13,7 @@
   },
   "author": "",
   "license": "UNLICENSED",
-  "devDependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
     "@mui/x-data-grid": "^6.5.0"
   },
