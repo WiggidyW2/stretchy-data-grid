@@ -1,24 +1,14 @@
 {
   "name": "stretchy-data-grid",
-  "version": "0.0.1",
-  "description": "MUI DataGrid with columns that automatically resize",
-  "main": "./index.js",
-  "module": "./index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WiggidyW/stretchy-data-grid.git"
   },
-  "author": "",
-  "license": "UNLICENSED",
-  "peerDependencies": {
-    "react": "^18.2.0",
+  "dependencies": {
     "@mui/x-data-grid": "^6.5.0"
   },
-  "bugs": {
-    "url": "https://github.com/WiggidyW/stretchy-data-grid/issues"
-  },
-  "homepage": "https://github.com/WiggidyW/stretchy-data-grid#readme"
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "lodash": "^4.17.21"
+  }
 }

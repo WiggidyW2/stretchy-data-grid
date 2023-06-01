@@ -195,19 +195,17 @@ export default class StretchyDataGrid extends React.Component {
 
   render() {
     const { columns, ...props } = this.props;
-    return (
-      <DataGrid
-        onColumnVisibilityModelChange={(model) => {
-          this.updateColDomRowMap(model);
-          this.stretchColumns();
-        }}
-        onSortModelChange={this.stretchColumns}
-        onFilterModelChange={this.stretchColumns}
-        onPaginationModelChange={this.stretchColumns}
-        ref={this.ref}
-        columns={this.state.columns}
-        {...props /* eslint-disable-line react/jsx-props-no-spreading */}
-      />
-    );
+    return React.createElement(DataGrid, {
+      onColumnVisibilityModelChange: (model) => {
+        this.updateColDomRowMap(model);
+        this.stretchColumns();
+      },
+      onSortModelChange: this.stretchColumns,
+      onFilterModelChange: this.stretchColumns,
+      onPaginationModelChange: this.stretchColumns,
+      ref: this.ref,
+      columns: this.state.columns,
+      ...props, /* eslint-disable-line react/jsx-props-no-spreading */
+    });
   }
 }
